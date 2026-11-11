@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker{
-            image 'mcp/playwright:latest'
+            image 'mcr.microsoft.com/playwright:latest'
             args '-u root --entrypoint='
         }
     }
