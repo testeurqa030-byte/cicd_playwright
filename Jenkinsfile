@@ -6,6 +6,7 @@ pipeline {
         }
     }
 
+    triggers{  githubPush() }
     stages {
          stage('Check version nodejs') {
             steps {
