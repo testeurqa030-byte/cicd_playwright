@@ -14,7 +14,7 @@ pipeline {
         }
         stage('installation dependances') {
             steps {
-                sh 'npm install'
+                sh 'npm install @playwright/test'
                 sh 'npx playwright install'
             }
         }
