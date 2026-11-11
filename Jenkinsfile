@@ -6,7 +6,6 @@ pipeline {
         }
     }
 
-    triggers{ cron('* * * * *') }
     stages {
          stage('Check version nodejs') {
             steps {
